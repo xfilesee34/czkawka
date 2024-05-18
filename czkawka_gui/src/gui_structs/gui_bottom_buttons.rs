@@ -94,8 +94,9 @@ impl GuiBottomButtons {
         buttons_select.set_popover(Some(popover_select));
         buttons_sort.set_popover(Some(popover_sort));
 
-        #[cfg(target_family = "windows")]
-        buttons_hardlink.set_sensitive(test_hardlinks());
+        //#[cfg(target_family = "windows")]
+        buttons_hardlink.set_sensitive(false);
+        buttons_symlink.set_sensitive(false);
 
         Self {
             buttons_search,
