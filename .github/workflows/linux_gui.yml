@@ -1,5 +1,7 @@
 name: 🐧 Linux GUI
 on:
+  workflow_dispatch:
+
   push:
   pull_request:
   schedule:
